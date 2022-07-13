@@ -1,0 +1,33 @@
+{
+
+    "manifest_version": 2,
+    "name": "DOM-Filter",
+    "version": "1.0",
+  
+    "description": "Simple DOM Filter",
+  
+    "icons": {
+      "48": "border-48.png"
+    },
+
+    "browser_action": {
+        "default_icon": "border-48.png",
+        "default_title": "CSS-Filter",
+        "default_popup": "menu.html"
+    },
+
+    "permissions": [
+        "activeTab",
+        "notifications",
+        "tabs"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  
+  }
+  
